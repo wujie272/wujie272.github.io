@@ -135,4 +135,6 @@ envelope_comment:
     top_img: false
     type: envelope
 
+live2d:
+  enable: false
 
