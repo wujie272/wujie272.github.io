@@ -29,6 +29,7 @@
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-landscape": "^1.0.0",
     "live2d-widget-model-hijiki": "^1.0.5",
-    "live2d-widget-model-koharu": "^1.0.5"
+    "live2d-widget-model-koharu": "^1.0.5",
+    "live2d-widget-model-wanko": "^1.0.5"
   }
 }
