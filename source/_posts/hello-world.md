@@ -1,5 +1,6 @@
 ---
 title: Hello World
+cover: false
 top_img: false
 type: "categories"
 categories: 

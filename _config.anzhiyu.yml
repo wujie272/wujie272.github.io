@@ -140,7 +140,7 @@ favicon: /favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg
+  img: https://ugly-tomato-fc1ay2kkwv.edgeone.app/ac1f790fc92ec3be7e4d58f3a5319512.jpg
   effect: false
 
 # Disable all banner image
@@ -431,7 +431,7 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2024
   custom_text:
   runtime:
     enable: true

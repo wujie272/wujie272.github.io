@@ -12,7 +12,7 @@
       video:
         - https://player.bilibili.com/player.html?aid=226886152&bvid=BV1Ch41137tR&cid=1081639816&p=1&autoplay=0
     
-    - content: 用 Termux 成功搭建 Hexo 网站
+    - content: 用 Termux 成功搭建本地 Hexo 网站
       date: 2025/10/9
       address: 东莞
       from: Jay & blog
