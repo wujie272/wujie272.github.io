@@ -2,22 +2,39 @@ name: Pages
 
 on:
   push:
-    branches: [main]   # 监听主分支推送
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:          # 显式授予写权限
+      contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 22
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: 22
-      - run: npm ci          # 安装依赖
-      - run: npx hexo generate
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GH_PAGES_TOKEN }}
-          publish_dir: ./public
+          node-version: 20
+          cache: 'npm'
 
+      - run: npm ci
+      - run: npx hexo generate
+
+      # 配置 Git 身份
+      - name: Configure Git
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # 把 public 强制推送到 gh-pages
+      - name: Deploy to GitHub Pages
+        run: |
+          cd public
+          git init
+          git add .
+          git commit -m "deploy"
+          git branch -m gh-pages
+          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
