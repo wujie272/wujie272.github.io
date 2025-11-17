@@ -1,12 +1,13 @@
 ---
 title: 在Linux运行Windows软件
-alias:
+date: 2025-03-01 08:00
 Author: Jaye·Wu
+top_img: false
 categories:
   - Linux
 tags:
-date created: 2025-03-01 08:00
 uid: 20251113104956
+cover: https://ivonblog.com/posts/setup-linux-bottles/images/cover.webp
 ---
 ![](https://ivonblog.com/posts/setup-linux-bottles/images/cover.webp)
 
@@ -88,8 +89,7 @@ Bottles 采用现代化设计的图形界面，所有功能一目了然。只需
 网易云音乐可在 Wine（Bottles）平台上运行新版本，提供了类似原生 Windows 应用的体验。安装过程涉及在 Bottles 中创建环境并安装必要的运行时库。该版本支持 HiDPI，可通过 Wine 工具配置。完成安装后，用户可以在 Bottles 中运行网易云音乐可执行文件或将其添加到快速启动栏。  
 
 
-![[Linux/assets/如何在Linux运行Windows exe软件/file-20251021120813432.png|屏幕截图_20240714_202929.png]]
-
+![](https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEI_n1pGwz5s__TEFchQ3XkMnfaWhKNfAACphgAAiu44FSKRSdSlC5W2zYE.png)
 
 
 ## 📥 如何安装 Bottles？
@@ -299,8 +299,6 @@ Wine的应用程式可能不支持 Wayland，它会用XWayland下去跑，导致
 ![](https://raw.gitcode.com/gh_mirrors/bo/Bottles/raw/c85edf809a91cd84c82e1aa0548827d691b07a74/data/images/bottles-welcome.png)
 
 
-现在就下载 Bottles，探索 Linux 系统运行 Windows 应用的无限可能吧！让我们一起告别系统限制，拥抱真正自由开放的计算体验。
-
 ## 相关文章
 
 - [Bottles Documentation](https://docs.usebottles.com/)
@@ -309,6 +307,4 @@ Wine的应用程式可能不支持 Wayland，它会用XWayland下去跑，导致
 - [經典音樂播放器 ～ Linux安裝foobar2000分類 Linux系統 Linux好用軟體 標籤 Music Player Wine](https://ivonblog.com/posts/linux-wine-foobar2000/)
 - [用Bottles运行兼容层无法启动的Steamdeck学习版游戏_哔哩哔哩_bilibili](【https://www.bilibili.com/video/BV1Kc411S7Cn)
 - [如何在Linux執行Windows exe檔，用Bottles管理多版本的Wine容器 · Ivon的部落格](https://ivonblog.com/posts/setup-linux-bottles/)
-
-
-[Linux系统中运行windows软件，安装Bottles中间的坑_linux bottles-CSDN博客](https://blog.csdn.net/liurugongzi123/article/details/130233021)
+- [Linux系统中运行windows软件，安装Bottles中间的坑_linux bottles-CSDN博客](https://blog.csdn.net/liurugongzi123/article/details/130233021)
