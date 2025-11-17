@@ -2,7 +2,6 @@
 title: Hello World
 cover: false
 top_img: false
-type: "categories"
 categories: 
     - 前端开发
 ---
