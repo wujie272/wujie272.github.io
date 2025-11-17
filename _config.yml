@@ -147,9 +147,17 @@ live2d:
     use: live2d-widget-model-wanko  # 使用的模型名称，可以通过 npm 安装其他模型
   display:
     position: right  # 显示位置：left 或 right
-    width: 150  # 看板娘宽度
-    height: 200  # 看板娘高度
+    width: 150  # 宽度
+    height: 200  # 高度
   mobile:
-    show: true  # 是否在移动端显示
+    show: true  # 移动端显示
   react:
     opacity: 0.8  # 透明度
+
+hide_posts:
+    enable: true
+    filter: hidden    # 文章里用 hidden:true 来标记
+    noindex: true     # 加 noindex，避免被搜索引擎收录
+    # 下面两项按需要微调，默认即可
+    allowlist_generators: []
+    blocklist_generators: ['*']
