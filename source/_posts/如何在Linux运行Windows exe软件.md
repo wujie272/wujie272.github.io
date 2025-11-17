@@ -6,6 +6,7 @@ top_img: false
 categories:
   - Linux
 tags:
+  - 软件工具
 uid: 20251113104956
 cover: https://ivonblog.com/posts/setup-linux-bottles/images/cover.webp
 ---
