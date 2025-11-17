@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 2025-10-09 08:00
 cover: false
 top_img: false
 categories: 
