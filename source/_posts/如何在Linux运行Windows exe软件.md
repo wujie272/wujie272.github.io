@@ -8,9 +8,9 @@ categories:
 tags:
   - 软件工具
 uid: 20251113104956
-cover: https://ivonblog.com/posts/setup-linux-bottles/images/cover.webp
+cover: https://i.imgs.ovh/2025/11/17/Cfw5qe.webp
 ---
-![](https://ivonblog.com/posts/setup-linux-bottles/images/cover.webp)
+![](https://i.imgs.ovh/2025/11/17/Cfw5qe.webp)
 
 如果你是 Linux 用户，却因无法运行 Windows 专属软件或游戏而困扰，那么 Bottles 这款开源神器将彻底改变你的体验！作为一款专为 Linux 系统设计的 Windows 兼容层管理工具，Bottles 让你告别复杂配置，轻松搭建稳定运行环境，无论是热门游戏还是专业软件都能流畅运行。
 
