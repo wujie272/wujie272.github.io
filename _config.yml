@@ -148,7 +148,7 @@ live2d:
   display:
     position: right  # 显示位置：left 或 right
     width: 150  # 宽度
-    height: 200  # 高度
+    height: 150  # 高度
   mobile:
     show: true  # 移动端显示
   react:
