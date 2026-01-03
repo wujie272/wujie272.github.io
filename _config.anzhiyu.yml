@@ -465,10 +465,10 @@ footer:
     centerImg:
     left:
       - title: email
-        link: mailto:anzhiyu-c@qq.com
+        link: mailto:2720036874@qq.com
         icon: anzhiyu-icon-envelope
       - title: 微博
-        link: https://weibo.com/u/6378063631
+        link: https://weibo.com/u/6239871221
         icon: anzhiyu-icon-weibo
       # - title: facebook
       #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
@@ -478,13 +478,13 @@ footer:
       #   icon: anzhiyu-icon-rss
     right:
       - title: Github
-        link: https://github.com/anzhiyu-c
+        link: https://github.com/wujie272
         icon: anzhiyu-icon-github
       - title: Bilibili
-        link: https://space.bilibili.com/372204786
+        link: https://b23.tv/wbBtHmQ
         icon: anzhiyu-icon-bilibili
       - title: 抖音
-        link: https://v.douyin.com/DwCpMEy/
+        link: https://v.douyin.com/Y6onafce2jg/
         icon: anzhiyu-icon-tiktok
       # - title: CC
       #   link: /copyright
