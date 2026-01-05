@@ -32,11 +32,17 @@
     list:
       - desc: 数控技术员
         color: "#357ef5"
-      - desc: 数控技术员
-        color: "#357ef5"
-      - desc: 数控技术员
-        color: "#357ef5"
     img: https://bu.dusays.com/2023/04/21/644287166329b.png
+# Umami 统计配置（关于页面访问统计卡片）
+    # 文档: https://umami.is/docs/api
+  umami:
+    enable: false
+    # Umami API 地址，如 https://analytics.example.com
+    apiHost:
+    # 网站 ID
+    websiteId:
+    # API Token（在 Umami 后台 Settings -> API Keys 中生成）
+    token:
   statistic:
     link: /archives
     text: 文章隧道
