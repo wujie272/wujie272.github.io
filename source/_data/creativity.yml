@@ -1,0 +1,23 @@
+- class_name: 开启创造力
+  creativity_list:
+    - name: Docker
+      color: "#57b6e6"
+      icon: https://upload-bbs.miyoushe.com/upload/2025/07/29/125766904/544b2d982fd5c4ede6630b29d86f3cae_7350393908531420887.png
+    - name: Photoshop
+      color: "#4082c3"
+      icon: https://upload-bbs.miyoushe.com/upload/2025/07/29/125766904/4ce1d081b9b37b06e3714bee95e58589_1613929877388832041.png
+    - name: Node
+      color: "#333"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/svg/node-logo.svg
+    - name: CSS3
+      color: "#2c51db"
+      icon: https://upload-bbs.miyoushe.com/upload/2025/08/02/125766904/948767d87de7c5733b5f59b036d28b4b_3573026798828830876.png
+    - name: JS
+      color: "#f7cb4f"
+      icon: https://upload-bbs.miyoushe.com/upload/2025/07/29/125766904/06216e7fddb6704b57cb89be309443f9_7269407781142156006.png
+    - name: HTML
+      color: "#e9572b"
+      icon: https://upload-bbs.miyoushe.com/upload/2025/08/02/125766904/f774c401c8bc2707e1df1323bdc9e423_1926035231499717029.png
+    - name: Git
+      color: "#df5b40"
+      icon: https://upload-bbs.miyoushe.com/upload/2025/07/29/125766904/fcc0dbbfe206b4436097a8362d64b558_6981541002497327189.webp
