@@ -1,6 +1,6 @@
 - class_name: 关于页
   subtitle: 生活明朗，万物可爱✨
-  avatarImg: https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEPg4tpWPwm3l6j_HMnBqBuuSRW6dzxygACYRwAAgpnyVaS5b1y2m34NzgE.png
+  avatarImg: https://cdn.jsdelivr.net/gh/wujie272/image-bed/blog/IMG_20260103_162333.png
   avatarSkills:
     left:
       - 🤖️ 数码科技爱好者
@@ -71,7 +71,7 @@
     game_tips: 爱好游戏
     game_title: 使命召唤
     game_uid: "UID: 125766904"
-    game_bg: https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEIn0lpGek25GI9PaPvDyQd8jGLAyZ5MwAC0DQAAiu40FT6hQt_4WTEdTYE.jpeg
+    game_bg: https://cdn.jsdelivr.net/gh/wujie272/image-bed/blog/CODM.jpeg
   comic:
     comic_tips: 爱好番剧
     comic_title: 追番
