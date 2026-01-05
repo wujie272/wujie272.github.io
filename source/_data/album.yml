@@ -2,7 +2,7 @@
   path_name: /wordScenery
   type: 2
   description: 因为到不了世界各地，所以请网友们发来了各地的夕阳与风景🌇。
-  cover: https://bu.dusays.com/2023/04/09/64329399db122.web p
+  cover: https://bu.dusays.com/2023/04/09/64329399db122.webp
   top_background: https://bu.dusays.com/2023/04/09/64329399db122.webp
   rowHeight: 220
   limit: 10
@@ -38,7 +38,7 @@
     - date: 2023-4-3
       content: 和老弟一起玩 Minecraft
       image:
-        - https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEInp5pGecSSVkMuutQ-JEv284Hp0jEPgACITQAAiu40FQ0Mjpc_il8qzYE.png
-        - https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEInqJpGecXJrfZ6wm3GMHplq-Bu-iHmAACJTQAAiu40FQYHKApr400rzYE.png
-        - https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEInqNpGecY-7_hGPIGOYx7iNypA6u0PwACJjQAAiu40FSD01VJxqdYUjYE.png
-        - https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEInqFpGecXPeT_DTivvomNnZBabOFaSgACJDQAAiu40FSrPWU4FxzEsjYE.png
+        - https://cdn.jsdelivr.net/gh/wujie272/image-bed/Photo/Minecraft1.png
+        - https://cdn.jsdelivr.net/gh/wujie272/image-bed/Photo/Minecraft2.png
+        - https://cdn.jsdelivr.net/gh/wujie272/image-bed/Photo/Minecraft3.png
+        - https://cdn.jsdelivr.net/gh/wujie272/image-bed/Photo/Minecraft4.png
