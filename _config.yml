@@ -136,17 +136,17 @@ envelope_comment:
     type: envelope
 
 live2d:
-  enable: true  # 启用
+  enable: true
   scriptFrom: local  # 脚本来源，可以是 local（本地）或 CDN（如 jsdelivr、unpkg）
   pluginRootPath: live2dw/  # 插件根目录
   pluginJsPath: lib/  # JavaScript 文件路径
   pluginModelPath: assets/  # 模型资源路径
   tagMode: false  # 是否仅替换 live2d 标签，而不是注入到所有页面
-  debug: false  # 调试模式
+  debug: false
   model:
     use: live2d-widget-model-wanko  # 使用的模型名称，可以通过 npm 安装其他模型
   display:
-    position: right  # 显示位置：left 或 right
+    position: right  # 显示位置
     width: 100  # 宽度
     height: 150  # 高度
   mobile:
