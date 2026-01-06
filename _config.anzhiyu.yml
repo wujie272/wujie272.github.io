@@ -1118,11 +1118,11 @@ LA:
 umami:
   enable: true
   # Umami API 地址，如 https://analytics.example.com
-  apiHost: https://umami-e8f935.netlify.app/api
+  apiHost: https://umami-e8f935.netlify.app
   # 网站 ID
   websiteId: "8367352b-3507-4cb6-b001-381b914f5c25"
   # API Token（在 Umami 后台 Settings -> API Keys 中生成）
-  token: "tTPn7WVQTvnBLeTeGI9gpNcO3v+tFvdfo4BoWhIhdeTIp4SYGDpV8T5n9/b7V9XC1hKhr2rLUxZ8ed6LqOXhKiES2Y9O5CR4Z3qlWMiN4Qa9TNmrPPfrxVlwDIwrId37aiMOLNySsdv4ClzYGzjq1EzOCPENfvsq+PZe/Px0TJEZYORX5pYu+keqm1fjfSTmNoWJmTVY8cozqEAOqESrmktf1ObmOXhN9MioQ3nyUgBCfptZ+WLWvH7rUtHhfRUvIS34rWy+UQxGiueSQvSteI55mX80CflYKQ+wxZbEIAPmhY78dCybqpD8e87Z21wS4B5JCJBPGbVwQ7UCT7n0FaiEJSSfDWYuC8hsU7gZveWaTQPXeVxROSHBRO+g"
+  token: "XmUXsVEkDs2yIt1TVN+HSMDAee/MJfPNhxusJRNP7nUiLiE7zlwaR1kcrmC3bEKB35HnfPIrJMx7ZlFn4L3OXbOlnJiyupG0Kdm59GpsxzAwwb5ZywJ3VSg1J34v+ubUdR0B7f08DBsvKTL028MKxDaSpuxTfNOvDXfTZ75ffl1k2QIi/UvWY6JxibDrh4mfQDGKLzGW/1kbkjt/LJaaepSS5TMBtT14mhKzsFSFpJshVNNQ2MFo3JKu8dhGDYlhBbV6io6ZSRDNdcqd5ZC3CDk4aj2J0vDSZR1ZQAn5swKC6kT2Hy+jdniMZxg+8DTsGwOALl4jFbpgNkal1zROqAR2yNiXns/ZZNCaMeZy9ThqqKwO2tuuEEWT2k8n"
 
 # 标签卖萌
 diytitle:
