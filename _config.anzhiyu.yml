@@ -576,7 +576,7 @@ cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics: 66409159e7c744b4a09bed9724d9fc3c
+cloudflare_analytics: "66409159e7c744b4a09bed9724d9fc3c"
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
@@ -1120,9 +1120,9 @@ umami:
   # Umami API 地址，如 https://analytics.example.com
   apiHost: https://umami-e8f935.netlify.app
   # 网站 ID
-  websiteId: 8367352b-3507-4cb6-b001-381b914f5c25
+  websiteId: "8367352b-3507-4cb6-b001-381b914f5c25"
   # API Token（在 Umami 后台 Settings -> API Keys 中生成）
-  token: tTPn7WVQTvnBLeTeGI9gpNcO3v+tFvdfo4BoWhIhdeTIp4SYGDpV8T5n9/b7V9XC1hKhr2rLUxZ8ed6LqOXhKiES2Y9O5CR4Z3qlWMiN4Qa9TNmrPPfrxVlwDIwrId37aiMOLNySsdv4ClzYGzjq1EzOCPENfvsq+PZe/Px0TJEZYORX5pYu+keqm1fjfSTmNoWJmTVY8cozqEAOqESrmktf1ObmOXhN9MioQ3nyUgBCfptZ+WLWvH7rUtHhfRUvIS34rWy+UQxGiueSQvSteI55mX80CflYKQ+wxZbEIAPmhY78dCybqpD8e87Z21wS4B5JCJBPGbVwQ7UCT7n0FaiEJSSfDWYuC8hsU7gZveWaTQPXeVxROSHBRO+g
+  token: "tTPn7WVQTvnBLeTeGI9gpNcO3v+tFvdfo4BoWhIhdeTIp4SYGDpV8T5n9/b7V9XC1hKhr2rLUxZ8ed6LqOXhKiES2Y9O5CR4Z3qlWMiN4Qa9TNmrPPfrxVlwDIwrId37aiMOLNySsdv4ClzYGzjq1EzOCPENfvsq+PZe/Px0TJEZYORX5pYu+keqm1fjfSTmNoWJmTVY8cozqEAOqESrmktf1ObmOXhN9MioQ3nyUgBCfptZ+WLWvH7rUtHhfRUvIS34rWy+UQxGiueSQvSteI55mX80CflYKQ+wxZbEIAPmhY78dCybqpD8e87Z21wS4B5JCJBPGbVwQ7UCT7n0FaiEJSSfDWYuC8hsU7gZveWaTQPXeVxROSHBRO+g"
 
 # 标签卖萌
 diytitle:
