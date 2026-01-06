@@ -576,7 +576,7 @@ cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics: "66409159e7c744b4a09bed9724d9fc3c"
+cloudflare_analytics: 
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
@@ -1262,6 +1262,8 @@ inject:
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
+    - <script defer src="https://umami-e8f935.netlify.app/script.js" data-website-id="8367352b-3507-4cb6-b001-381b914f5c25"></script>
+
  
 
 # CDN
