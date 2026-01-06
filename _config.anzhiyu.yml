@@ -1118,7 +1118,7 @@ LA:
 umami:
   enable: true
   # Umami API 地址，如 https://analytics.example.com
-  apiHost: https://umami-e8f935.netlify.app
+  apiHost: https://umami-e8f935.netlify.app/api/auth/login
   # 网站 ID
   websiteId: "8367352b-3507-4cb6-b001-381b914f5c25"
   # API Token（在 Umami 后台 Settings -> API Keys 中生成）
