@@ -539,7 +539,7 @@ footer:
       # - link: https://beian.miit.gov.cn/
       #   text: 湘ICP备-xxxxxxx号
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
       # Effect Speed Options (打字效果速度参数)
@@ -576,7 +576,7 @@ cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics:
+cloudflare_analytics: 66409159e7c744b4a09bed9724d9fc3c
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
@@ -1114,7 +1114,7 @@ LA:
   ck:
   LingQueMonitorID:
 # Umami 统计配置（关于页面访问统计卡片）
-    # 文档: https://umami.is/docs/api
+  # 文档: https://umami.is/docs/api
 umami:
   enable: true
   # Umami API 地址，如 https://analytics.example.com
