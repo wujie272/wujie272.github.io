@@ -564,7 +564,7 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: 2fad29caf5068b235450c9afa0f8b34b
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -1347,7 +1347,7 @@ CDN:
     # pace_default_css:
     # countup_js:
     # gsap_js:
-    busuanzi: cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js
+    # busuanzi:
     # rightmenu:
     # waterfall:
     # ali_iconfont_css:
