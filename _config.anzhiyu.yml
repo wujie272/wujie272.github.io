@@ -1122,7 +1122,8 @@ umami:
   # 网站 ID
   websiteId: "8367352b-3507-4cb6-b001-381b914f5c25"
   # API Token（在 Umami 后台 Settings -> API Keys 中生成）
-  token: "XmUXsVEkDs2yIt1TVN+HSMDAee/MJfPNhxusJRNP7nUiLiE7zlwaR1kcrmC3bEKB35HnfPIrJMx7ZlFn4L3OXbOlnJiyupG0Kdm59GpsxzAwwb5ZywJ3VSg1J34v+ubUdR0B7f08DBsvKTL028MKxDaSpuxTfNOvDXfTZ75ffl1k2QIi/UvWY6JxibDrh4mfQDGKLzGW/1kbkjt/LJaaepSS5TMBtT14mhKzsFSFpJshVNNQ2MFo3JKu8dhGDYlhBbV6io6ZSRDNdcqd5ZC3CDk4aj2J0vDSZR1ZQAn5swKC6kT2Hy+jdniMZxg+8DTsGwOALl4jFbpgNkal1zROqAR2yNiXns/ZZNCaMeZy9ThqqKwO2tuuEEWT2k8n"
+  token: "PWALEfCQW9cgDuqHBAutlDVDgw+dQuVV3pNwDcsC33ZMrArDOYEshD97EksrwgLegmJ4N/X98S5kwkSiVnuqKzK/INADfQC6/WjCxl3YTL2xM8rc9OKvfzuCF/+MNWSUL1ze5MJN8gtgMTQFdsBgLt+9yZo+Xx7ZJE4QNKJnGrmnOJ3QNfydKzmz6CTpbTTfk+8bNsVfhpJQEsFHz0lhnECxX6yVt/Yhfe2wEYvfs8CbggxAH0oY7lwsAFoj4L5d1JEK6pIZecXI1bWAbgfgFKktICczBNYeiEb3v6bf6q8rM+v1nBjKqI1wg2f58lwl7YJ5SnsJRLj4Ls99Hyn9hrCSLZ4wkMmc6AKEHXv0CbVqyOwqq0ht7uq9qKW5"
+
 
 # 标签卖萌
 diytitle:
@@ -1346,7 +1347,7 @@ CDN:
     # pace_default_css:
     # countup_js:
     # gsap_js:
-    # busuanzi:
+    busuanzi: cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js
     # rightmenu:
     # waterfall:
     # ali_iconfont_css:
