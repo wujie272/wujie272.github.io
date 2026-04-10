@@ -1118,7 +1118,7 @@ LA:
   # 文档: https://umami.is/docs/api
 umami:
   enable: true
-  apiURL: https://frosy-boat-fd50.wujie2720036874.workers.dev/ # 填写 umami API 地址
+  umami_api: https://frosy-boat-fd50.wujie2720036874.workers.dev/ # 填写 umami API 地址
   # Umami API 地址，如 https://analytics.example.com
   apiHost: https://frosty-boat-fd50.wujie2720036874.workers.dev/
   # 网站 ID
