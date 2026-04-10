@@ -1118,6 +1118,7 @@ LA:
   # 文档: https://umami.is/docs/api
 umami:
   enable: true
+  apiURL: https://frosy-boat-fd50.wujie2720036874.workers.dev/ # 填写 umami API 地址
   # Umami API 地址，如 https://analytics.example.com
   apiHost: https://frosty-boat-fd50.wujie2720036874.workers.dev/
   # 网站 ID
@@ -1125,10 +1126,6 @@ umami:
   # API Token（在 Umami 后台 Settings -> API Keys 中生成）
   token: "0FUk0qc6YebibahxkLokT+JazdaKo/zk/QhgkaPiEo5cq39NxOaAls/IefgOs1Tns8qMLTuF2KOtoP6u76dw6HNG0209S0vWMfLqVzVG49LW1I56TXqxtHVK8fmExYsCrae8eoxcNrN/cyz1XWzOmnkP420218xLT9WEhrRNoWdBxThZz5eOhN+nAKsr6RQbMu+PVmd8qX65FQgoL6OWHmekzPdzsq+jjJRn4rfnmOa4tfLbjHoWv6oNsSwtCPBaVT8cS4wnKSF6i+9lFbEObfG6AzuReyiPyvZ9BOOygpkwU4wMhO8gsA4sgMM2C0NINbbg6og/8b6r08WQADMVTVi1bsMUSE/L19pTwSArZON9Rc/CmG3WfN68o9Sk"
 
-  umami_url_js: https://um.bsgun.cn/script.js # 填写 umami js地址 可以使用第三方CDN加速但需要配置下面的 umami_url
-  umami_id: 8367352b-3507-4cb6-b001-381b914f5c25 # 填写 umami 统计 ID
-  umami_api: https://frosty-boat-fd50.wujie2720036874.workers.dev/ # 填写 umami API 地址
-  umami_url: # https://um.bsgun.cn 填写 umami 服务器地址 使用 CDN 加速 Umami 静态资源后需配置此项
 
 # 标签卖萌
 diytitle:
