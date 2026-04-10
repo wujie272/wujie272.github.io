@@ -1120,7 +1120,7 @@ umami:
   enable: true
   umami_api: https://frosy-boat-fd50.wujie2720036874.workers.dev/ # 填写 umami API 地址
   # Umami API 地址，如 https://analytics.example.com
-  apiHost: https://frosty-boat-fd50.wujie2720036874.workers.dev/
+  apiHost: https://unami.dpdns.org/
   # 网站 ID
   websiteId: "8367352b-3507-4cb6-b001-381b914f5c25"
   # API Token（在 Umami 后台 Settings -> API Keys 中生成）
