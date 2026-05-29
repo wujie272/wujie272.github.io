@@ -993,6 +993,61 @@ const anzhiyu = {
     // 切换标志位
     changeMusicListFlag = !changeMusicListFlag;
   },
+  // 移动端滑动手势：左右滑动切歌
+  addMobileMusicGestures: function () {
+    const navMusic = document.getElementById("nav-music");
+    if (!navMusic || !anzhiyu.hasMobile()) return;
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let isSwiping = false;
+
+    navMusic.addEventListener("touchstart", e => {
+      const touch = e.touches[0];
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+      isSwiping = false;
+    }, { passive: true });
+
+    navMusic.addEventListener("touchmove", e => {
+      if (!touchStartX) return;
+      const touch = e.touches[0];
+      const deltaX = touch.clientX - touchStartX;
+      const deltaY = touch.clientY - touchStartY;
+      // 水平滑动 > 垂直滑动 才算滑动手势
+      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 10) {
+        isSwiping = true;
+      }
+    }, { passive: true });
+
+    navMusic.addEventListener("touchend", e => {
+      if (!isSwiping || !touchStartX) {
+        touchStartX = 0;
+        touchStartY = 0;
+        return;
+      }
+
+      const deltaX = e.changedTouches[0].clientX - touchStartX;
+      const threshold = 40; // 最小滑动距离
+
+      if (Math.abs(deltaX) > threshold) {
+        if (deltaX > 0) {
+          // 右滑 → 上一曲
+          anzhiyu.musicSkipBack();
+          anzhiyu.snackbarShow("⏪ 上一曲");
+        } else {
+          // 左滑 → 下一曲
+          anzhiyu.musicSkipForward();
+          anzhiyu.snackbarShow("⏩ 下一曲");
+        }
+      }
+
+      touchStartX = 0;
+      touchStartY = 0;
+      isSwiping = false;
+    }, { passive: true });
+  },
+
   // 控制台音乐列表监听
   addEventListenerConsoleMusicList: function () {
     const navMusic = document.getElementById("nav-music");

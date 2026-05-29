@@ -657,16 +657,28 @@ document.addEventListener("DOMContentLoaded", function () {
       anzhiyu
         .intersectionObserver(
           () => {
-            if (footerDom && musicDom && 768 < document.body.clientWidth) {
-              musicDom.style.bottom = "-10px";
-              musicDom.style.opacity = "0";
+            if (footerDom && musicDom) {
+              if (768 < document.body.clientWidth) {
+                // 桌面端：移出视野（左下方）
+                musicDom.style.bottom = "-10px";
+                musicDom.style.opacity = "0";
+              } else {
+                // 移动端：往上挪，避免挡住页脚链接
+                musicDom.style.bottom = "calc(60px + env(safe-area-inset-bottom, 10px))";
+                musicDom.style.opacity = "0.5";
+              }
             }
             scrollBottomFirstFlag = true;
           },
           () => {
-            if (footerDom && musicDom && 768 < document.body.clientWidth) {
-              musicDom.style.bottom = "20px";
-              musicDom.style.opacity = "1";
+            if (footerDom && musicDom) {
+              if (768 < document.body.clientWidth) {
+                musicDom.style.bottom = "20px";
+                musicDom.style.opacity = "1";
+              } else {
+                musicDom.style.bottom = "calc(16px + env(safe-area-inset-bottom, 8px))";
+                musicDom.style.opacity = "1";
+              }
             }
           }
         )()
@@ -1840,6 +1852,7 @@ document.addEventListener("DOMContentLoaded", function () {
     anzhiyu.switchRightClickMenuHotReview();
     anzhiyu.getCustomPlayList();
     anzhiyu.addEventListenerConsoleMusicList(false);
+    anzhiyu.addMobileMusicGestures();
     anzhiyu.initPaginationObserver();
 
     setTimeout(() => {
