@@ -23665,6 +23665,138 @@ i.bber-gotobb {
   pointer-events: all;
 }
 
+/* ===== 移动端优化 ===== */
+
+/* 手机端全局优化 */
+@media screen and (max-width: 768px) {
+  /* 安全区适配 */
+  #nav-music {
+    bottom: calc(16px + env(safe-area-inset-bottom, 8px));
+    left: 12px;
+    transform-origin: left bottom;
+    border-radius: 40px;
+    z-index: 999;
+  }
+
+  /* 增加触摸高度到 48px（符合 Material Design 触摸目标规范） */
+  #nav-music .aplayer {
+    height: 48px;
+  }
+
+  /* 音乐封面微调 */
+  #nav-music .aplayer.aplayer-withlrc .aplayer-pic {
+    height: 28px;
+    width: 28px;
+    margin-left: 6px;
+  }
+
+  /* 歌名缩短避免溢出 */
+  #nav-music .aplayer .aplayer-info .aplayer-music .aplayer-title {
+    max-width: 90px;
+  }
+
+  /* 点击歌名区域更宽松 */
+  #nav-music .aplayer .aplayer-info .aplayer-music {
+    padding: 0 14px 0 8px;
+  }
+
+  /* 隐藏桌面端的 hover 提示（触屏无 hover） */
+  #nav-music #nav-music-hoverTips {
+    display: none !important;
+  }
+
+  /* 播放中背景不要模糊（省电 + 减少掉帧） */
+  #nav-music.playing .aplayer {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* 减慢动画速度减少性能开销 */
+  #nav-music.playing .aplayer.aplayer-withlrc .aplayer-pic {
+    animation-duration: 36s;
+  }
+
+  /* 歌词展开：宽度适配 */
+  #nav-music.stretch .aplayer.aplayer-withlrc .aplayer-lrc {
+    width: 130px;
+  }
+
+  /* 歌词文字缩小 */
+  #nav-music .aplayer .aplayer-lrc p {
+    font-size: 12px;
+    line-height: 34px !important;
+    height: 34px !important;
+  }
+
+  /* 播放进度条更明显（便于触摸拖动） */
+  #nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+    opacity: 0.18;
+  }
+}
+
+/* 极小屏手机（≤ 400px 如 iPhone SE / 小屏安卓） */
+@media screen and (max-width: 400px) {
+  #nav-music {
+    bottom: calc(10px + env(safe-area-inset-bottom, 6px));
+    left: 8px;
+  }
+
+  #nav-music .aplayer {
+    height: 44px;
+  }
+
+  #nav-music .aplayer.aplayer-withlrc .aplayer-pic {
+    height: 24px;
+    width: 24px;
+  }
+
+  #nav-music .aplayer .aplayer-info .aplayer-music .aplayer-title {
+    max-width: 60px;
+    font-size: 13px;
+  }
+
+  #nav-music.stretch .aplayer.aplayer-withlrc .aplayer-lrc {
+    width: 90px;
+    margin-left: 4px;
+  }
+
+  #nav-music .aplayer .aplayer-lrc p {
+    font-size: 11px;
+    line-height: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* 横屏手机：移到右上角避免被手势导航栏遮挡 */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  #nav-music {
+    bottom: auto;
+    top: calc(10px + env(safe-area-inset-top, 8px));
+    left: auto;
+    right: calc(12px + env(safe-area-inset-right, 8px));
+    transform-origin: right top;
+  }
+
+  #nav-music .aplayer {
+    height: 48px;
+  }
+
+  #nav-music.stretch .aplayer.aplayer-withlrc .aplayer-lrc {
+    width: 130px;
+  }
+}
+
+/* 平板：不隐藏但适当调整 */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  #nav-music.stretch .aplayer.aplayer-withlrc .aplayer-lrc {
+    width: 160px;
+  }
+
+  #nav-music .aplayer .aplayer-info .aplayer-music .aplayer-title {
+    max-width: 150px;
+  }
+}
+
 /* bilibli番剧插件 */
 #page #article-container .bangumi-tab.bangumi-active {
   background: var(--anzhiyu-theme);
