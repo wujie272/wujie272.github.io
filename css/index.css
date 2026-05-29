@@ -23753,6 +23753,40 @@ i.bber-gotobb {
     -webkit-user-select: none;
     user-select: none;
   }
+
+  /* 移动端过渡动画加速（更跟手） */
+  #nav-music,
+  #nav-music .aplayer,
+  #nav-music .aplayer.aplayer-withlrc .aplayer-lrc,
+  #nav-music .aplayer .aplayer-info .aplayer-music .aplayer-title {
+    transition-duration: 0.25s !important;
+  }
+
+  /* 展开歌词时：发光边框暗示可点击折叠 */
+  #nav-music.stretch {
+    box-shadow: 0 0 20px -3px var(--anzhiyu-main);
+  }
+
+  /* 展开时进度条更亮，暗示可拖动 */
+  #nav-music.stretch .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+    opacity: 0.28;
+    animation-duration: 3s;
+  }
+
+  /* 进度条触摸区域放大（方便手指拖动） */
+  #nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+    min-height: 22px;
+  }
+
+  /* 封面旋转动画在 stretch 时暂停（减少视觉干扰） */
+  #nav-music.stretch.playing .aplayer.aplayer-withlrc .aplayer-pic {
+    animation-play-state: paused;
+  }
+
+  /* 歌词出现动画优化 */
+  #nav-music.stretch .aplayer.aplayer-withlrc .aplayer-lrc {
+    transition: width 0.25s ease, opacity 0.2s ease 0.05s;
+  }
 }
 
 /* 极小屏手机（≤ 400px 如 iPhone SE / 小屏安卓） */

@@ -1007,6 +1007,7 @@ const anzhiyu = {
       touchStartX = touch.clientX;
       touchStartY = touch.clientY;
       isSwiping = false;
+      navMusic.dataset.swiping = "false";
     }, { passive: true });
 
     navMusic.addEventListener("touchmove", e => {
@@ -1031,6 +1032,9 @@ const anzhiyu = {
       const threshold = 40; // 最小滑动距离
 
       if (Math.abs(deltaX) > threshold) {
+        // 标记滑动中，阻止随后的 click 事件触发展开
+        navMusic.dataset.swiping = "true";
+
         if (deltaX > 0) {
           // 右滑 → 上一曲
           anzhiyu.musicSkipBack();
@@ -1040,6 +1044,9 @@ const anzhiyu = {
           anzhiyu.musicSkipForward();
           anzhiyu.snackbarShow("⏩ 下一曲");
         }
+
+        // 触觉反馈（支持 vibrate 的设备）
+        if (navigator.vibrate) navigator.vibrate(15);
       }
 
       touchStartX = 0;
@@ -1052,6 +1059,24 @@ const anzhiyu = {
   addEventListenerConsoleMusicList: function () {
     const navMusic = document.getElementById("nav-music");
     if (!navMusic) return;
+
+    // 移动端：点击播放器展开/折叠歌词
+    if (anzhiyu.hasMobile()) {
+      navMusic.addEventListener("click", e => {
+        // 滑动中触发的 click 忽略
+        if (navMusic.dataset.swiping === "true") {
+          navMusic.dataset.swiping = "false";
+          return;
+        }
+        // 点的是播放按钮让 APlayer 自己处理
+        if (e.target.closest(".aplayer-button")) return;
+        // 切换歌词展开/折叠
+        anzhiyu.musicTelescopic();
+      });
+      return;
+    }
+
+    // 桌面端：原有逻辑 - 显示播放列表
     navMusic.addEventListener("click", e => {
       const aplayerList = navMusic.querySelector(".aplayer-list");
       const listBtn = navMusic.querySelector(
